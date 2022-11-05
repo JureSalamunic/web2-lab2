@@ -61,7 +61,7 @@ app.post('/login', (req, resp) => {
             }
 
 
-            if (res['rowCount'] == 1){
+            if (res['rowCount'] >= 1){
                 loggedIn = true
                 if (res['rows'][0]['username'] === 'admin'){
                     admin = true
