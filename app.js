@@ -6,10 +6,10 @@ app.use(parser.urlencoded({ extended: false }))
 app.use(parser.json())
 const { Pool, Client } = require('pg')
 const client = new Client({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'juka',
-    password: 'password',
+    user: 'lab2',
+    host: 'dpg-cdj9fjaen0honmdbsk50-a',//postgres://lab2:uoE57kP8VuPDMX0ISUF3tUzsL9yPKLoY@dpg-cdj9fjaen0honmdbsk50-a/lab2_qs7q',
+    database: 'lab2_qs7q',
+    password: 'uoE57kP8VuPDMX0ISUF3tUzsL9yPKLoY',
     port: 5432,
   })
 
